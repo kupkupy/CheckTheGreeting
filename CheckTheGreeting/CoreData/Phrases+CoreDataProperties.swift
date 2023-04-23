@@ -2,7 +2,7 @@
 //  Phrases+CoreDataProperties.swift
 //  CheckTheGreeting
 //
-//  Created by Tanya on 27.01.2023.
+//  Created by Tanya on 23.04.2023.
 //
 //
 
@@ -16,10 +16,8 @@ extension Phrases {
         return NSFetchRequest<Phrases>(entityName: "Phrases")
     }
 
-    @NSManaged public var phrase: String
-    @NSManaged public var id: String
-    @NSManaged public var dictionaryID: String
-    @NSManaged public var dictionary: Dictionary
+    @NSManaged public var dictionary: String?
+    @NSManaged public var phrase: String?
 
 }
 

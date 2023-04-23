@@ -2,13 +2,14 @@
 //  Dictionary+CoreDataClass.swift
 //  CheckTheGreeting
 //
-//  Created by Tanya on 23.11.2022.
+//  Created by Tanya on 23.04.2023.
 //
 //
 
 import Foundation
 import CoreData
 
-@objc(Dictionary)
+
 public class Dictionary: NSManagedObject {
+
 }
