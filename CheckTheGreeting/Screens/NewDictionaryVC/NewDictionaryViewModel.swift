@@ -16,4 +16,8 @@ class NewDictionaryViewModel {
     func fetchDictionary(with title: String) -> Dictionary? {
         return CoreDataManager.shared.fetchDictionary(with: title)
     }
+    
+    func fetchDictionaries() -> [Dictionary]? {
+        CoreDataManager.shared.fetchDictionaries()
+    }
 }

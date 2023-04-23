@@ -42,7 +42,7 @@ extension NewDictionaryVC: ButtonActionDelegate, CloseButtonDelegate, UIComponen
     func didTapButton() {
         guard let text = newDictionaryView.textField.text, !text.isEmpty else { return }
     
-        if let result = CoreDataManager.shared.fetchDictionaries()?.contains(where: { $0.title == text }), result {
+        if let result = viewModel?.fetchDictionaries()?.contains(where: { $0.title == text }), result {
             present(makeAlertWarning(), animated: true)
         } else {
             viewModel?.createDictionary(text: text)
